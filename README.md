@@ -1,22 +1,27 @@
-# Taiwan Daily Life Skill
+# Taiwan Daily Life Routing Index
 
-`taiwan-daily-life` is a Codex skill for routing questions about daily life in Taiwan to the right official source, office, hotline, portal, or Chinese search term.
+`taiwan-daily-life` is an agent routing index for daily-life questions in Taiwan: official source, office, hotline, portal, Chinese search term, and practical next-step artifact.
 
-The skill is designed as a navigation index, not an encyclopedia. It helps an agent answer questions like:
+The instruction set is designed as a navigation index and action playbook, not an encyclopedia. It helps an agent answer questions like:
 
 - How do I handle household registration, ARC/APRC, NHI, taxes, or work permits in Taiwan?
 - Which hotline or agency handles fraud, labor disputes, housing problems, consumer complaints, or domestic violence?
 - Where should I check typhoon closures, earthquakes, public transport disruptions, or government office calendars?
 - What Chinese keyword should I search for a local Taiwan service?
+- What should I bring?
+- What does this notice/bill mean?
+- Draft a Chinese message to my landlord/school/clinic.
+- What is open/running today?
+- What evidence should I preserve before escalating?
 
 ## Files
 
-- `SKILL.md` - the actual Codex skill loaded by agents. This is the source of truth.
+- `SKILL.md` - the routing-index instruction set loaded by agents. This is the source of truth.
 - `README.md` - human-facing overview and maintenance notes.
 
 ## Core Use
 
-Use this skill when a user asks about living in Taiwan, including:
+Use this routing index when a user asks about living in Taiwan, including:
 
 - government paperwork and identity systems
 - healthcare, NHI, public health, pregnancy, and mental health routing
@@ -27,11 +32,13 @@ Use this skill when a user asks about living in Taiwan, including:
 - transport, vehicles, weather, earthquakes, typhoons, holidays, and closures
 - legal process, mediation, police reports, personal safety, and civil defense
 
-The expected output is practical routing: who to contact, what official site to check, what detail the user must provide, and what Chinese term to search.
+The expected output is practical routing plus useful action artifacts: who to contact, what official site to check, what detail the user must provide, what Chinese term to search, what to bring, what to say, what to preserve, and what to verify as current.
 
 ## Maintenance Rules
 
-Keep `SKILL.md` concise and route-focused.
+Keep `SKILL.md` concise, route-focused, and sequence-focused.
+
+Keep scenario playbooks sequence-focused and non-stale. Do not encode exact fees/deadlines unless verified against current official sources.
 
 Before adding exact numbers, deadlines, fees, fines, fares, subsidy thresholds, eligibility rules, or hotline hours, verify them against current official sources. Taiwan government pages and hotlines change, and stale details can cause real-world harm.
 

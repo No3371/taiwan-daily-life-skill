@@ -1,11 +1,13 @@
 # Taiwan Daily Life Routing Index Scenario Workflow Revision
 
-> **Status:** In Progress
+> **Status:** Complete
 > **Created:** 2026-04-30
 > **Author:** Agent
 > **Source:** Direct request: "plan-projex revision" after audit
 > **Related Projex:** None
 > **Worktree:** No
+> **Completed:** 2026-04-30
+> **Walkthrough:** 2604302239-taiwan-daily-life-scenario-workflows-revision-walkthrough.md
 
 ---
 
@@ -16,7 +18,7 @@ Revise `taiwan-daily-life` from strong source-routing index → source-routing +
 **Scope:** `taiwan-daily-life` routing-index docs only.
 **Estimated Changes:** 2 files: `SKILL.md`, `README.md`.
 
-**Blocker:** folder is not in a Git repo. Normal projex requirement "plan committed before execution" cannot be satisfied until folder is imported into a repo or Git lifecycle is waived.
+**Blocker:** Resolved during execution retry. Folder is now a Git repo with baseline files and plan committed before execution branch work.
 
 ---
 
@@ -85,7 +87,7 @@ Weaknesses:
 
 - **Requires:** User approval to execute plan.
 - **Blocks:** Future `execute-projex` revision.
-- **Blocked by:** No Git repo in `taiwan-daily-life` folder for projex commit lifecycle.
+- **Blocked by:** None. Prior Git lifecycle blocker resolved during execution retry.
 
 ### Constraints
 
@@ -436,5 +438,5 @@ Full rollback:
 
 ### Open Questions
 
-- [ ] Should this folder be initialized/imported into a Git repo so projex lifecycle can commit plans/execution?
+- [x] Should this folder be initialized/imported into a Git repo so projex lifecycle can commit plans/execution? Resolved before execution retry continued.
 - [ ] Should the on-disk filename `SKILL.md` remain for compatibility while public docs use provider-neutral terms?

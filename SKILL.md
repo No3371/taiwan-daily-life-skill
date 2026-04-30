@@ -42,7 +42,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 ## Answering Workflow
 - First classify urgency: emergency, deadline/penalty risk, rights/dispute, routine errand, or recommendation.
 - If urgent or safety-related, give the phone number/action first, then explain.
-- In every response where you used this skill, include a brief note that you referred to the `taiwan-daily-life` skill and include the skill's `Last updated` timestamp. For emergencies, put life-safety action first and the skill note after.
+- Include provenance/update note only for audits, meta questions about this routing index, or when freshness/currentness affects confidence. For emergencies, never delay life-safety action with metadata.
 - If the answer depends on city/county, district, visa type, age, employer status, school level, property address, or calendar year, ask for that missing detail or state the assumption.
 - Do not assume the user is foreign. Ask or infer whether the user has household registration, ARC/APRC, NHI, employment insurance, student status, vehicle/property ownership, or dependent family members only when it changes the route.
 - For fees, eligibility, fines, schedules, tax figures, NHI amounts, transport fares, and policy deadlines, verify current details by web search before giving exact numbers.
@@ -50,6 +50,17 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 - Prefer official government, operator, school, hospital, bank, or utility sources. Use blogs/forums only for practical color, and label them as non-authoritative.
 - Give the user the local keyword to search in Chinese; Taiwan services are often easier to find with the exact Chinese phrase.
 - For recommendation/comparison questions without a single official source (restaurants, doctors with a specific language, banks with English apps, ISPs, schools, repair shops), use maps/web search or official provider sites and label the result as non-authoritative/practical rather than government-confirmed.
+
+## Agent Output Policy
+- Prefer actionable artifacts when the user's need is concrete: bring-this checklist, Chinese call/LINE script, form/search terms, evidence packet, deadline plan, current-status check, or step sequence.
+- For confusing documents/notices/bills, parse what it is, identify sender/authority, extract deadline/amount/location/action, then route to official verification.
+- For recurring admin tasks, give sequence first, then offices/links, then what to prepare.
+- If online flow fails, provide counter-service fallback and the exact phrase to ask for.
+
+## Source Truth Levels
+- Official truth: law, eligibility, deadlines, fees, fines, permits, agency jurisdiction. Use government/operator primary sources.
+- Operational truth: open today, branch practice, appointment slots, train/bus status, hospital clinic hours. Verify with the office/operator/institution that owns the service.
+- Practical truth: recommendations, English friendliness, app quality, neighborhood convenience, repair-shop quality. Use maps/web/provider sites; label as non-authoritative.
 
 ---
 
@@ -64,6 +75,39 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 - "Life stage / care": pregnancy, birth registration, childcare, elder care, disability support, caregiver issues, funeral/death paperwork.
 - "Family/property/benefit admin": school district, childcare subsidy, rent subsidy, elderly or disability benefits, inheritance paperwork, land/building transcript, vehicle tax/fines, labor insurance/pension records.
 - "Daily practical life": trash/recycling, parcel delivery, medicine import, mobile payments, e-invoice lottery, pet registration, driving license, scooter/car accident, insurance claim.
+
+## Status Variables To Check Only When Relevant
+- Location: city/county, district, address, school district, route/station.
+- Identity/admin: household registration, National ID, ARC/APRC, passport, NHI, natural person certificate/TW FidO.
+- Life context: age, student/employer/self-employed status, dependent family, disability/care status, renter/owner/vehicle owner.
+- Urgency: immediate danger, deadline, penalty/fine, service outage, travel date, appointment date.
+- Evidence: notice/bill/photo, sender, case number, amount, due date, screenshots, LINE/email, receipts, contract.
+
+## Scenario Playbooks
+
+**Moved home / moving soon**
+→ Ask city/district, renter/owner, citizen/ARC/APRC, move date. Sequence: address/household or ARC update → utilities/internet/gas transfer → garbage/bulky waste → mail/parcels → parking/vehicle address → rent subsidy/lease records → deposit evidence.
+
+**Got official notice / registered letter**
+→ Extract agency/sender, date received, deadline, case number, amount, required action. Route to issuing agency first; if dispute/deadline risk, preserve envelope/notice and verify appeal/payment deadline.
+
+**Need to pay bill/fine/fee**
+→ Identify bill type, due date, barcode/payment code, agency/operator. Prefer official portal or convenience-store kiosk route; verify late fee/penalty before quoting.
+
+**Lost key document/card/phone**
+→ Triage fraud/safety first. Then suspend card/SIM/account → police report if theft/loss affects insurance or ID → replacement agency → update OTP/bank/government logins.
+
+**Apartment/building problem**
+→ Danger? use 119/110/gas company. Otherwise preserve dated photos/videos/messages → notify landlord/building manager in writing → check lease/building rules → mediation/consumer/building office route.
+
+**ARC/ID/phone rejected online**
+→ Ask exact ID type/format, issue date, phone carrier/account name, browser/app. Try uppercase/no spaces/current UI; then official counter/service line fallback.
+
+**Care need for child/elder/disabled person**
+→ Ask age, city, household/ARC/NHI, certificate/status, urgency, living arrangement. Route to school/social welfare/1966/1957/health center as applicable; check subsidies locally.
+
+**Typhoon/earthquake/holiday disruption**
+→ Safety first. Verify weather/warning/closure/operator status separately; city/county and sector determine answer. Never infer transport/trash/clinic/bank status from holiday or weather alone.
 
 ---
 
@@ -92,6 +136,8 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Document notarization / authentication | Local court notary office for notarization; BOCA: https://www.boca.gov.tw for document authentication |
 | Official translation requirements | Ask the receiving agency; search "[agency] 翻譯 公證" |
 | What documents any government office needs | Search "[service name] 應備文件" on the specific agency's website |
+| Registered mail / official notice interpretation | Identify issuing agency, receipt/postmark date, case number, deadline, and required action; route to the issuing agency first; search "行政處分 訴願 期限" only as legal-process routing, not advice |
+| ROC/Minguo date or Taiwan address parsing | Convert carefully and verify context before deadline advice; route address ambiguity to local 戶政事務所, 地政事務所, post office ZIP search, or receiving agency |
 | Voting / election registration questions | 中央選舉委員會: https://www.cec.gov.tw; household registration status determines district |
 | Citizen military service questions | 內政部役政署: https://www.nca.gov.tw; search "役男 兵役" + city/county |
 
@@ -121,8 +167,11 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | What NHI covers / doesn't cover | https://www.nhi.gov.tw/en → "Benefits" |
 | Hospital appointment booking | Each hospital's own app or website; search "[hospital name] 掛號" |
 | After-hours clinic / urgent care | Search "[city/district] 夜間門診" or "[city] 急診"; use **119** for emergency ambulance |
-| English-speaking doctors | Non-authoritative practical search: "英語看診" + specialty + city; verify with the clinic/hospital 服務台 and NHI contract search |
+| English-speaking doctors | Practical search: "英語看診" + specialty + city; verify with the clinic/hospital 服務台 and NHI contract search |
 | Eye / dental care | Search "眼科" or "牙醫" + district; verify NHI contract status in NHI search |
+| Medical records / diagnosis certificate copy | Hospital medical records counter or patient service; search "[hospital] 病歷 申請 診斷證明" |
+| Hospital bill/payment dispute | Hospital billing counter or patient service first; if NHI coverage is disputed, route to NHIA service division/hotline |
+| Pharmacy / OTC / refill question | Ask pharmacist or prescribing clinic; use TFDA for medicine import, safety, or product authorization questions |
 | Pregnancy, prenatal care, child health | 衛福部國健署 HPA: https://www.hpa.gov.tw; 孕產婦關懷諮詢專線 **0800-870-870**; also ask OB/pediatric clinic and local health center |
 | Vaccines / public health clinic | Local health center (衛生所/健康服務中心); search "[district] 衛生所 疫苗" |
 | Communicable disease / epidemic / travel health question | 疾病管制署 Taiwan CDC: https://www.cdc.gov.tw; 防疫專線 **1922** or **0800-001922** |
@@ -202,7 +251,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Garbage truck schedule | Search "[city/district] 垃圾車 時刻表"; Taipei DEP: https://english.dep.gov.taipei |
 | How to throw away or recycle a specific item | 回收大百科: https://recycle.rethinktw.org for item-level guidance; then verify local city rules if needed |
 | Bulky trash pickup | Search "[city] 大型廢棄物 清運"; usually book through city EPA/1999 |
-| Internet providers comparison | Non-authoritative practical search: "台灣寬頻比較 [year]" plus official ISP sites; no single government source for quality comparison |
+| Internet providers comparison | Practical search: "台灣寬頻比較 [year]" plus official ISP sites; no single government source for quality comparison |
 | Local nuisance / road light / pothole / drain issue | City/county 1999 or public works portal; search "[city] 1999 路燈 坑洞 水溝" |
 
 **Key routing notes:**
@@ -224,7 +273,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 |---|---|
 | Opening a bank account as a foreigner | Call the branch first; common routes include post office and major banks; bring ARC + passport + second ID if requested |
 | Bank account changes for residents: seal, passbook, name, lost card | Issuing bank branch/service line; search "[bank] 掛失 印鑑變更 存摺遺失" |
-| Which banks have English apps/web | Non-authoritative practical search: "[bank name] English internet banking"; verify current app/web language support with the bank |
+| Which banks have English apps/web | Practical search: "[bank name] English internet banking"; verify current app/web language support with the bank |
 | Mobile payment setup | LINE Pay: pay.line.me/tw; Taiwan Pay: taiwanpay.com.tw |
 | Sending money abroad | Compare licensed remittance services and bank wire; verify fees, exchange rate, transfer limit, and recipient-country rules |
 | Checking your credit score / report | 金融聯合徵信中心: https://www.jcic.org.tw → 個人信用報告申請 |
@@ -236,6 +285,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Vehicle compulsory insurance | Ask insurer or Motor Vehicles Office; search "強制汽車責任保險" |
 | Labor insurance / pension personal record | 勞保局 e化服務: https://www.bli.gov.tw; search "個人網路申報及查詢作業" |
 | Lost ATM/credit card | Call the issuing bank's 掛失 hotline immediately; then 165 if fraud is suspected |
+| Debt / collection call | Verify with bank/lender first through official contact; suspected scam → **165**; disputed debt → lender complaint channel, financial dispute route, consumer protection, or legal aid depending on source |
 | Mobile barcode / invoice prize payout bank account | https://www.einvoice.nat.gov.tw → 手機條碼 / 領獎設定 |
 
 **Key routing notes:**
@@ -255,7 +305,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Finding your school district (學區) | Search "[your district/area] 學區查詢" or ask local 里辦公室 |
 | Public school transfer / enrollment documents | School office + city/county education bureau; search "[city] 轉學 應備文件" |
 | Bilingual/English-medium public schools | City/county education bureau first; national context: https://www.k12ea.gov.tw → 雙語教育 |
-| International/private school options | Non-authoritative practical search: "[city] international school"; verify registration/status, school level, and admissions rules with city/county education bureau and the school |
+| International/private school options | Practical search: "[city] international school"; verify registration/status, school level, and admissions rules with city/county education bureau and the school |
 | University application (international) | https://www.studyintaiwan.org (EN); https://www.cac.edu.tw for local entrance |
 | Learning Mandarin (institutional) | Search "華語中心" + university/city; verify visa eligibility with the school and NIA/BOCA |
 | Chinese proficiency test (TOCFL) | https://tocfl.edu.tw |
@@ -294,6 +344,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Labor pension / National Pension questions | 勞保局 BLI: https://www.bli.gov.tw; distinguish 勞保, 勞退, 國民年金 |
 | Query personal labor insurance / labor pension record | 勞保局 e化服務: https://www.bli.gov.tw; login with natural person certificate/TW FidO where supported |
 | Local labor dispute mediation | Search "[city] 勞資爭議 調解" or call city/county labor bureau |
+| Freelancer / self-employed admin | Route tax to eTax/local tax bureau, NHI category to NHIA/local office, labor insurance/pension to BLI where applicable; verify current official pages |
 
 **Key routing notes:**
 - Labor law answers depend on employment category: office worker, migrant worker, domestic caregiver, teacher, contractor, or self-employed.
@@ -323,7 +374,9 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Towed scooter/car | Search "[city] 拖吊 查詢" or call local parking/towing office |
 | Road closure / construction / disaster road condition | Local transport bureau/public works bureau, police, or Highway Bureau; search "[city/road] 道路封閉 / 交通管制 / 施工" |
 | Taxi complaint / lost item | Ask receipt/fleet first; city transport bureau taxi complaint channel if unresolved |
+| Lost item on public transport | Operator lost-and-found first; for taxis use receipt/fleet/time/location, then city transport bureau if needed |
 | Airport transport | Verify current routes/fares with airport MRT, bus operator, TRA/THSR, or airport website |
+| Airport / flight disruption | Airline and airport official notices first; travel insurance or credit-card insurer second if claims may apply |
 | Traffic accident steps | Police **110** if injury/dispute; exchange IDs, insurance, photos; request accident report from police station |
 
 **Key routing notes:**
@@ -348,6 +401,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | TW FidO / mobile natural person certificate | https://fido.moi.gov.tw; use for supported government logins and digital signing |
 | Government site rejects ARC/ID number | Try exact ARC format, uppercase letters, no spaces; if still blocked, call agency or use counter service |
 | Mobile number / OTP / real-name issue | Carrier store first; bring ARC/passport and ask whether number registration matches the service |
+| Account locked / OTP inaccessible after phone loss | Suspend SIM/account if fraud risk, visit carrier for number recovery, then use bank/service official recovery path; call **165** if suspicious activity occurred |
 | Government portal outage or maintenance | Check the service's latest news/公告; search "[service name] 系統維護 / 暫停服務 / 公告" |
 | Common convenience-store digital tasks | ibon/FamiPort for printing, bill payment, ticketing, government fee payment |
 
@@ -367,6 +421,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Question type | Go to |
 |---|---|
 | Post office tracking / postage / ZIP code | Chunghwa Post: https://www.post.gov.tw → Track & Trace / Zip Code / Postage Rates |
+| Registered letter pickup / missed delivery notice | Chunghwa Post tracking or local post office first; bring matching ID and notice; verify pickup deadline/status with the post office |
 | Convenience-store parcel pickup | The store chain app/kiosk; bring ID matching parcel name/phone |
 | International package customs/tax | Customs Administration: https://web.customs.gov.tw; search "快遞 貨物 稅費" |
 | Consumer purchase dispute / refund issue | Consumer Protection hotline **1950**; online complaint through 行政院消費者保護會 |
@@ -391,7 +446,9 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Question type | Go to |
 |---|---|
 | Marriage/divorce/birth/death registration | Local 戶政事務所 via https://www.ris.gov.tw; ask whether one party is foreign |
+| Same-sex marriage / family documents | 戶政事務所 + receiving agency first; foreign documents may need translation/authentication before acceptance |
 | Baby birth registration and NHI | Hospital birth documents → 戶政事務所 → NHI enrollment via employer/local office |
+| Adoption / foster care | Local social welfare bureau; legal aid/lawyer for contested, private, or cross-border cases |
 | Inheritance first steps after death | 戶政 death registration, tax bureau inheritance/gift tax, land office/bank/insurer as relevant; route legal disputes to legal aid/lawyer |
 | Pregnancy / childbirth documents | Hospital/clinic + local 戶政事務所; foreign documents may need translation/authentication |
 | Pet registration / rabies vaccine | Local animal protection office; search "[city] 寵物登記 狂犬病" |
@@ -419,6 +476,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Elder welfare / meal delivery / home care | Local social welfare bureau; search "[city] 老人 福利" |
 | Rent subsidy / social housing / youth housing support | 內政部不動產資訊平台 and city housing bureau; search "租金補貼 社會住宅" + city/county |
 | Low/middle-low income household support | Local social welfare bureau or district office; search "[city] 低收入戶 中低收入戶 申請" |
+| Homeless / immediate shelter or food need | **1957** or local social welfare bureau; if danger, exposure, injury, or medical emergency use **119/110** first |
 | General social welfare consultation | **1957** 福利諮詢專線; for urgent danger use **113/119/110** first |
 | Caregiver stress / respite support | **1966** long-term care route; 家庭照顧者關懷專線 **0800-507-272**; local caregiver support stations |
 | Dementia care support | 失智症關懷專線 **0800-474-580** and local dementia/community care resources |
@@ -624,7 +682,8 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 ---
 
 ## What This Skill Does NOT Cover
-- Restaurant / attraction / shop recommendations → use maps/web search; use this skill only for official constraints, safety, transport, accessibility, and complaints.
-- Specific legal advice → route to 法律扶助基金會 or a licensed attorney; this skill can explain process and evidence preservation.
-- Medical diagnosis → route to a clinic/hospital/pharmacist; give emergency numbers when appropriate.
-- Current news and policy changes → always web search; this skill is not a live source.
+- Recommendation databases: restaurants, shops, gyms, neighborhoods, repair providers. Use maps/web search; this routing index supplies official constraints, complaint routes, safety, accessibility, and transport checks.
+- Specific legal advice: route to legal aid/lawyer; this routing index can structure process questions, evidence, deadlines to verify.
+- Medical diagnosis/treatment choice: route to clinic/hospital/pharmacist; this routing index can help find services, records, billing, emergency routing.
+- Live news/policy/current prices: web-search/official verification required.
+- Form completion with legal consequences: help interpret fields and identify agency guidance, but avoid inventing answers.
