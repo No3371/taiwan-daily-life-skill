@@ -1,6 +1,8 @@
 # Taiwan Daily Life Reference Split Plan
 
-> **Status:** In Progress
+> **Status:** Complete
+> **Completed:** 2026-05-01
+> **Walkthrough:** `2605010502-taiwan-daily-life-reference-split-walkthrough.md`
 > **Created:** 2026-05-01
 > **Author:** Codex
 > **Source:** Direct request
@@ -458,3 +460,4 @@ Per-step rollback is noted above. If full implementation must be abandoned:
 ### Open Questions
 
 - None.
+

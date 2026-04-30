@@ -16,7 +16,8 @@ The instruction set is designed as a navigation index and action playbook, not a
 
 ## Files
 
-- `SKILL.md` - the routing-index instruction set loaded by agents. This is the source of truth.
+- `SKILL.md` - operating playbook, emergency-first rules, cross-domain routing, and domain reference lookup map.
+- `references/` - detailed routing references by domain. This is where domain source routes, hotlines, portals, search terms, and edge-case notes live.
 - `README.md` - human-facing overview and maintenance notes.
 
 ## Core Use
@@ -36,7 +37,11 @@ The expected output is practical routing plus useful action artifacts: who to co
 
 ## Maintenance Rules
 
-Keep `SKILL.md` concise, route-focused, and sequence-focused.
+Keep `SKILL.md` concise but operational: universal answer behavior, need-pattern/action playbooks, cross-domain rules, emergency immediate-action numbers, and complete lookup cues.
+
+When adding or moving domain reference content, update both the target `references/*.md` file and the `SKILL.md` lookup row so agents can find it.
+
+Detailed domain route corrections belong in the relevant reference file; mirror only enough cue text in `SKILL.md` for lookup.
 
 Keep scenario playbooks sequence-focused and non-stale. Do not encode exact fees/deadlines unless verified against current official sources.
 
@@ -65,3 +70,5 @@ Be especially careful with:
 - mental health, domestic violence, stalking, and police/legal routes
 
 For emergencies, give the immediate action first. Do not make the user read background context before seeing `110`, `119`, `113`, `165`, or other urgent routing.
+
+
