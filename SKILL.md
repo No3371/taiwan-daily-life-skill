@@ -185,7 +185,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 
 **Key routing notes:**
 - NHI Express App (健保快易通) is often the fastest route for card management, records, clinic finder, and virtual NHI card; available in English
-- The 6-month waiting period has exceptions (employment, Gold Card, spouse of citizen) — exact rules at https://www.nhi.gov.tw/en → Enrollment
+- The 6-month waiting period has exceptions for employed ARC holders, specific foreign-professional/dependent categories, and foreign newborns; Gold Card or spouse status alone is not enough to summarize eligibility — verify current rules at https://www.nhi.gov.tw/en → Enrollment
 - Co-pay amounts change; always verify current figures at the NHI site rather than citing from memory
 - For mental health: search "身心科" or "精神科" + district; NHI covers outpatient psychiatry
 - For psychiatric emergency, self-harm risk, violence risk, severe confusion, overdose, or inability to stay safe, route to **119/110** first; do not treat 1925 as ambulance dispatch.
@@ -238,7 +238,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Rental electricity overcharge | Search "住宅租賃 電費 當期每度平均電價" and verify current MOI rules; ask landlord for/authorize Taipower bill info where applicable |
 | Landlord blocks rent subsidy / lease registration concern | Search "租金補貼 不得禁止" + MOI/city housing bureau; preserve lease, payment records, and landlord messages |
 | Illegal sublet / short-term rental / Airbnb-style issue | Verify lease permission, building rules, and city government lodging/housing rules; unresolved disputes → district mediation or local housing/building office |
-| Reporting address change (ARC) | NIA within 15 days of moving: https://oa.immigration.gov.tw |
+| Reporting address change (ARC) | NIA change registration; current NIA guidance says within 30 days after residential address/place-of-service change, but verify the user's category and current source: https://oa.immigration.gov.tw |
 | Checking actual transaction prices in area | 實價登錄: https://lvr.land.moi.gov.tw |
 | Utility setup (electricity) | 台電: https://www.taipower.com.tw → 新增用電申請 |
 | Utility setup (water) | Taipei: https://www.water.gov.taipei; others: https://www.water.gov.tw |
@@ -274,7 +274,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Opening a bank account as a foreigner | Call the branch first; common routes include post office and major banks; bring ARC + passport + second ID if requested |
 | Bank account changes for residents: seal, passbook, name, lost card | Issuing bank branch/service line; search "[bank] 掛失 印鑑變更 存摺遺失" |
 | Which banks have English apps/web | Practical search: "[bank name] English internet banking"; verify current app/web language support with the bank |
-| Mobile payment setup | LINE Pay: pay.line.me/tw; Taiwan Pay: taiwanpay.com.tw |
+| Mobile payment setup | LINE Pay: https://pay.line.me/tw; Taiwan Pay: https://www.taiwanpay.com.tw |
 | Sending money abroad | Compare licensed remittance services and bank wire; verify fees, exchange rate, transfer limit, and recipient-country rules |
 | Checking your credit score / report | 金融聯合徵信中心: https://www.jcic.org.tw → 個人信用報告申請 |
 | Reporting fraud / stopping a transfer | Call the bank/card issuer immediately, call **165**, and follow police instructions; go to a police station if directed |
@@ -395,8 +395,8 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 |---|---|
 | Tourist SIM/eSIM | Airport telecom counters or official carrier sites: Chunghwa Telecom, Taiwan Mobile, Far EasTone |
 | Postpaid mobile plan as resident | Carrier store; bring Taiwan ID or ARC/passport + second ID if requested |
-| Telecom billing/contract dispute | NCC complaints: https://www.ncc.gov.tw/english → Complaints; telecom complaint hotline **0800-177-177** |
-| Cable TV / broadband complaint | NCC **0800-177-177**; press path depends on complaint type |
+| Telecom billing/contract dispute | Carrier customer service first; if unresolved or no reply after 15 days, 電信服務消費爭議處理中心 **0800-034-580** / https://tcmc.tw; NCC channel **0800-177177** or **0800-201-207** |
+| Cable TV / broadband complaint | Operator first; NCC complaint portal/phone if unresolved: https://cabletvweb.ncc.gov.tw; **0800-177177** (landline) or **02-4128-177** (mobile) |
 | Government online identity / digital certificate | MyData: https://mydata.nat.gov.tw; natural person certificate: https://moica.nat.gov.tw |
 | TW FidO / mobile natural person certificate | https://fido.moi.gov.tw; use for supported government logins and digital signing |
 | Government site rejects ARC/ID number | Try exact ARC format, uppercase letters, no spaces; if still blocked, call agency or use counter service |
@@ -545,7 +545,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 **Primary routing:**
 | Question type | Go to |
 |---|---|
-| Free legal aid / lawyer referral | 法律扶助基金會: https://www.laf.org.tw; hotline: **412-8518** |
+| Free legal aid / lawyer referral | 法律扶助基金會 LAF: https://www.laf.org.tw; **412-8518** (landline direct, mobile add **02**); press path, hours, language, and issue scope vary |
 | District mediation | Local 區公所/鄉鎮市公所 調解委員會; search "[district] 調解委員會" |
 | Police report / criminal complaint | Local police station or **110** if urgent |
 | Stalking / harassment | **110** if in danger; local police station for report; search "跟蹤騷擾防制法 書面告誡 保護令" |
@@ -605,7 +605,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 |---|---|
 | Foreigner/new resident daily-life consultation | **1990**; overseas **886-800-001990** |
 | Disease prevention / epidemic consultation | **1922** or **0800-001922** |
-| Weather / Typhoon Info | **1991** |
+| Weather / Typhoon Info | CWA web/app first; phone weather recordings **166** Mandarin / **167** Hakka-Taiwanese-English where available; verify current CWA phone routes before quoting |
 | Long-Term Care | **1966** |
 | Social welfare consultation | **1957** |
 | Consumer Protection | **1950** |
@@ -620,7 +620,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Real-time typhoon / earthquake alerts | CWA App: 天氣e點靈; web: https://www.cwa.gov.tw |
 | Typhoon holiday / stop-work-school announcement | DGPA: https://www.dgpa.gov.tw/typh/daily/nds.html plus user's city/county government |
 | Earthquake info after a quake | CWA Seismological Center: https://scweb.cwa.gov.tw; shows magnitude, epicenter, tsunami status |
-| Legal aid | 法律扶助基金會: https://www.laf.org.tw; hotline: **412-8518** |
+| Legal aid | 法律扶助基金會 LAF: https://www.laf.org.tw; **412-8518** (landline direct, mobile add **02**); verify menu, hours, language, and issue scope |
 | Your country's representative office | Search "[country] representative office Taipei" — Taiwan has unofficial offices for most countries |
 | Reporting landlord/employer illegal behavior | 1999 (Taipei city issues); 110 (police); 1955 (labor) |
 | DV / abuse resources | **113** → emergency shelter referral, protection order guidance, legal aid |
@@ -638,7 +638,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 ## Cross-Domain Routing Rules
 
 **"I need to pay a government fee / fine / bill"**
-→ Any convenience store ibon (7-Eleven) or FamiPort (FamilyMart) kiosk handles almost all government payments. If unsure: go to ibon.com.tw → 繳費服務 to see the full list.
+→ Many common bills, fees, and fines can be paid through convenience-store kiosks when the bill barcode/payment channel supports it. Verify the bill's instructions, amount limit, deadline, and supported channel before sending the user to ibon/FamiPort/OK mart/Life-ET.
 
 **"I need to print / scan a document"**
 → ibon or FamiPort kiosk at any 7-Eleven or FamilyMart, post office, or local print shop 影印店. Verify current price before quoting.
