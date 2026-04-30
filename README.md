@@ -47,6 +47,8 @@ Keep scenario playbooks sequence-focused and non-stale. Do not encode exact fees
 
 Before adding exact numbers, deadlines, fees, fines, fares, subsidy thresholds, eligibility rules, or hotline hours, verify them against current official sources. Taiwan government pages and hotlines change, and stale details can cause real-world harm.
 
+For high-risk admin claims and advisory hotlines, keep a source anchor near the route in `references/*.md`: exact official URL, what claim it supports, and a last-checked date when the page does not expose a clear update date. Avoid generic homepages as proof for immigration, NHI, tax, labor, housing, medicine import, emergency, or scam-adjacent claims.
+
 Prefer official sources:
 
 - central government agencies

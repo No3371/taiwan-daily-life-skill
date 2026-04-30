@@ -26,7 +26,7 @@ Fast disambiguators:
 | Opening a bank account as a foreigner | Call the branch first; common routes include post office and major banks; bring ARC + passport + second ID if requested |
 | Bank account changes for residents: seal, passbook, name, lost card | Issuing bank branch/service line; search "[bank] 掛失 印鑑變更 存摺遺失" |
 | Which banks have English apps/web | Practical search: "[bank name] English internet banking"; verify current app/web language support with the bank |
-| Mobile payment setup | LINE Pay: https://pay.line.me/tw; Taiwan Pay: https://www.taiwanpay.com.tw |
+| Mobile payment setup | LINE Pay Taiwan: https://pay.line.me/portal/tw; Taiwan Pay: https://www.taiwanpay.com.tw; verify current app/account setup in the provider help center |
 | Sending money abroad | Compare licensed remittance services and bank wire; verify fees, exchange rate, transfer limit, and recipient-country rules |
 | Checking your credit score / report | 金融聯合徵信中心: https://www.jcic.org.tw → 個人信用報告申請 |
 | Reporting fraud / stopping a transfer | Call the bank/card issuer immediately, call **165**, and follow police instructions; go to a police station if directed |

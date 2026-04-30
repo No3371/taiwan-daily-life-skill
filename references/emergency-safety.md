@@ -47,6 +47,25 @@ Fast disambiguators:
 | Drug-use/addiction consultation | **0800-770-885** |
 | Family caregiver support | **0800-507-272** |
 
+### Hotline Source Anchors
+Last checked: 2026-05-01 +08:00. Advisory hours/scope can change; verify source page before promising language, hours, fee status, or eligibility.
+
+| Number | Scope | Official anchor | Source/update note |
+|---|---|---|---|
+| 112 | Mobile emergency routing when 110/119 cannot connect or no SIM | NCC emergency 112 page: https://api.ncc.gov.tw/chncc/app/artwebsite?id=438&module=artwebsite&serno=null | Use as fallback route; still prefer 110/119 when normal service works |
+| 113 | DV, child/elder/disability protection, sexual assault/harassment reporting/support | MOHW 113 intro: https://dep.mohw.gov.tw/DOPS/fp-1183-6499-105.html | Page update 2024-05-24; if immediate danger, call 110 first |
+| 1990 | Foreigner/new resident daily-life consultation | NIA hotline page: https://www.immigration.gov.tw/5382/5385/5388/7181/100924/%E5%A4%96%E4%BE%86%E4%BA%BA%E5%A3%AB%E5%9C%A8%E8%87%BA%E7%94%9F%E6%B4%BB%E8%AB%AE%E8%A9%A2%E6%9C%8D%E5%8B%99%E7%86%B1%E7%B7%9A/ | Page update 2026-04-29; language hours differ |
+| 1925 | Suicide/self-harm crisis and mental-health support | MOHW consultation hotline list: https://mohw.gov.tw/np-23-1.html | 24-hour service listed; use 119/110 for immediate danger |
+| 1955 | Labor consultation/complaint, migrant-worker interpretation/support | WDA 1955 page: https://fw.wda.gov.tw/wda-employer/home/lazypg/index | 24-hour and multilingual service listed |
+| 1922 / 0800-001922 | Disease prevention / epidemic consultation | MOHW consultation hotline list: https://mohw.gov.tw/np-23-1.html | 24-hour service listed |
+| 1966 | Long-term care | MOHW long-term care site: https://1966.gov.tw/ | Site lists weekday service hours; local care-management center may matter |
+| 1957 | Social welfare consultation | MOHW consultation hotline list: https://mohw.gov.tw/np-23-1.html | Listed hours: daily 08:00-22:00 |
+| 1950 | Consumer protection | Executive Yuan CPC page: https://cpc.ey.gov.tw/Page/A1D31DAB12817E9 | Work-hours consultation; paid special-code routing may apply |
+| 1919 | Food safety | TFDA 1919 page: https://www.fda.gov.tw/TC/siteContent.aspx?sid=10672 | TFDA page maintenance 2024-12-12; fee may apply |
+| 0800-870-870 | Pregnancy care consultation | MOHW consultation hotline list: https://mohw.gov.tw/np-23-1.html; HPA service page: https://www.hpa.gov.tw/Pages/List.aspx?nodeid=315 | Verify hours before quoting |
+| 0800-770-885 | Drug-use/addiction consultation | MOHW consultation hotline list: https://mohw.gov.tw/np-23-1.html | 24-hour service listed |
+| 0800-507-272 | Family caregiver support | MOHW consultation hotline list: https://mohw.gov.tw/np-23-1.html; MOHW caregiver page: https://www.mohw.gov.tw/cp-2704-14643-1.html | Verify weekday hours before quoting |
+
 
 **Primary routing:**
 | Question type | Go to |

@@ -24,15 +24,15 @@ Fast disambiguators:
 | Question type | Go to |
 |---|---|
 | Finding rentals | Use major rental platforms and local groups; verify listing, landlord identity, and ownership before paying |
-| Verifying landlord actually owns the property | 地政司 謄本查詢: https://eservices.land.moi.gov.tw — search by address; verify current fee |
-| Land/building transcript for owned property | 地政司 謄本查詢: https://eservices.land.moi.gov.tw; search "土地建物謄本" |
+| Verifying landlord actually owns the property | 全國地政電子謄本系統: https://epaper.land.moi.gov.tw/Home/SNWorkItem; validation anchor: https://www.gov.tw/News_Content_2_379465; search "網路申領地政電子謄本" and verify current fee/login requirements |
+| Land/building transcript for owned property | 全國地政電子謄本系統: https://epaper.land.moi.gov.tw/Home/SNWorkItem; gateway: https://www.land.nat.gov.tw/; search "土地建物謄本" |
 | Cadastral map / land number / zoning clue | 地政司 or city land office; search "地籍圖資網路便民服務" and verify with local 地政事務所 |
-| Residential lease mandatory/prohibited clauses and official template | 內政部: https://www.moi.gov.tw → search "住宅租賃定型化契約 應記載 不得記載"; use official template as a baseline, but focus on mandatory/prohibited terms |
+| Residential lease mandatory/prohibited clauses and official template | Administrative Yuan consumer standard-contract page: https://www.ey.gov.tw/Page/DFB720D019CCCB0A/478917df-7599-418f-8715-fd2716b623b4; search "住宅租賃定型化契約 應記載 不得記載"; use official template as baseline, but verify latest effective date |
 | Deposit dispute / landlord refusing to return | 消費者保護 1950, or district 調解委員會 (free mediation); find at local 區公所 |
 | Rental electricity overcharge | Search "住宅租賃 電費 當期每度平均電價" and verify current MOI rules; ask landlord for/authorize Taipower bill info where applicable |
 | Landlord blocks rent subsidy / lease registration concern | Search "租金補貼 不得禁止" + MOI/city housing bureau; preserve lease, payment records, and landlord messages |
 | Illegal sublet / short-term rental / Airbnb-style issue | Verify lease permission, building rules, and city government lodging/housing rules; unresolved disputes → district mediation or local housing/building office |
-| Reporting address change (ARC) | NIA change registration; current NIA guidance says within 30 days after residential address/place-of-service change, but verify the user's category and current source: https://oa.immigration.gov.tw |
+| Reporting address change (ARC) | NIA 申辦服務: https://www.immigration.gov.tw/5385/7244/; current NIA FAQ for address/place-of-service change: https://www.immigration.gov.tw/5385/12162/12197/371903/; verify category/current update date before quoting deadline/fine |
 | Checking actual transaction prices in area | 實價登錄: https://lvr.land.moi.gov.tw |
 | Utility setup (electricity) | 台電: https://www.taipower.com.tw → 新增用電申請 |
 | Utility setup (water) | Taipei: https://www.water.gov.taipei; others: https://www.water.gov.tw |
@@ -49,7 +49,7 @@ Fast disambiguators:
 | Local nuisance / road light / pothole / drain issue | City/county 1999 or public works portal; search "[city] 1999 路燈 坑洞 水溝" |
 
 **Key routing notes:**
-- 謄本查詢 (property ownership check) is the one thing most renters don't know to do; it catches subletting scams
+- 謄本查詢 (property ownership check) is the one thing most renters don't know to do; it catches subletting scams. Use the official e-transcript route or a local 地政事務所, not search-result ads or broker pages.
 - 調解委員會 at the district office (區公所) is free and surprisingly effective for landlord disputes — faster than court
 - 實價登錄 shows what apartments in an area actually sold/rented for — essential for price negotiation
 - Land office 地政事務所 is the route for property records, land/building transcripts, cadastral questions, address/land-number confusion, and many pre-sale or ownership checks.
