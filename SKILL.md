@@ -16,7 +16,7 @@ description: >
 
 # 台灣生活導航 — Taiwan Daily Life Navigation Index
 
-Last updated: 2026-04-30 15:30 +08:00 (Asia/Taipei)
+Last updated: 2026-04-30 23:55 +08:00 (Asia/Taipei)
 
 ## Core Principle
 This skill is a **routing index**, not an encyclopedia. For each domain it tells you:
@@ -132,7 +132,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Work permit status | 勞動部 eService: https://ezworktaiwan.wda.gov.tw |
 | Visa overstay / status regularization | Call NIA directly: **02-2388-9393** (not the 0800 line) |
 | Foreigner/new resident daily-life consultation | NIA 外來人士在臺生活諮詢服務熱線 **1990**; overseas **886-800-001990**; verify language hours |
-| Police criminal record certificate | 警政署: https://eli.npa.gov.tw → search "警察刑事紀錄證明" |
+| Police criminal record certificate | 警政署線上申辦: https://eli.npa.gov.tw/E7WebO/; search "警察刑事紀錄證明" and verify pickup/postal eligibility |
 | Document notarization / authentication | Local court notary office for notarization; BOCA: https://www.boca.gov.tw for document authentication |
 | Official translation requirements | Ask the receiving agency; search "[agency] 翻譯 公證" |
 | What documents any government office needs | Search "[service name] 應備文件" on the specific agency's website |
@@ -148,7 +148,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 - For Taiwanese users, the fastest route is often not a national homepage but the local 戶政事務所, 區公所, 里辦公處, or city/county 1999 service.
 - Natural person certificate, TW FidO, MyData, NHI Express, eTax, BLI e-services, and MVDIS are the core resident self-service portals; check whether the user's ID type can log in.
 - All NIA forms downloadable at: https://www.immigration.gov.tw → 表單下載
-- Local 戶政事務所 handles: National ID, household records, name changes, marriage/birth/death registration, household record copies (戶籍謄本) — find nearest at https://www.ris.gov.tw/app/portal/364
+- Local 戶政事務所 handles: National ID, household records, name changes, marriage/birth/death registration, household record copies (戶籍謄本) — find nearest via RIS 戶政機關通訊錄: https://www.ris.gov.tw/app/portal/20
 - For citizens, household registration status can affect voting, school districts, tax household questions, subsidies, and military service; ask what record or benefit depends on it.
 
 ---
@@ -158,7 +158,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 **Primary routing:**
 | Question type | Go to |
 |---|---|
-| NHI enrollment eligibility & process | https://www.nhi.gov.tw/en → "Foreigner" section |
+| NHI enrollment eligibility & process | NHIA English Enrollment: https://www.nhi.gov.tw/en/np-5-2.html; for ARC holders, use "Foreign Nationals who Reside in Taiwan with an Alien Resident Certificate (ARC)" |
 | NHI enrollment or dependent transfer for citizens/residents | NHIA local service division or employer/township office; search "健保 轉入 眷屬加保 應備文件" |
 | NHI premium calculation | https://www.nhi.gov.tw → 保費專區 → 保費計算 |
 | Find NHI-contracted clinic, dental clinic, or hospital | https://www.nhi.gov.tw → 特約醫事機構查詢 OR NHI Express App |
@@ -202,8 +202,8 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Question type | Go to |
 |---|---|
 | Filing annual income tax | https://www.etax.nat.gov.tw (EN available; guided filing in May) |
-| Tax residency rules (183-day) | https://www.irs.gov.tw → 外僑所得稅 section |
-| Withholding tax for non-residents | Same: 外僑所得稅 → 扣繳 |
+| Tax residency rules (183-day) | eTax alien individual income tax: https://www.etax.nat.gov.tw/etwmain/alien-tax-service/alien-individual-income-tax; verify filing-year instructions |
+| Withholding tax for non-residents | eTax alien individual income tax / National Taxation Bureau pages; search "外僑所得稅 扣繳 非居住者" |
 | Gold Card tax incentive details | https://goldcard.nat.gov.tw → "Tax Incentives" |
 | Tax ID / reporting ID for foreigners | Usually the NIA-issued 統一證號 on ARC/APRC or unified ID basic-data sheet; no separate tax ID for most ARC holders, but verify legacy/no-ARC cases |
 | Household/dependent deductions and income lookup | https://www.etax.nat.gov.tw; search "綜合所得稅 扶養親屬" or "所得及扣除額資料查詢" |
@@ -395,8 +395,8 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 |---|---|
 | Tourist SIM/eSIM | Airport telecom counters or official carrier sites: Chunghwa Telecom, Taiwan Mobile, Far EasTone |
 | Postpaid mobile plan as resident | Carrier store; bring Taiwan ID or ARC/passport + second ID if requested |
-| Telecom billing/contract dispute | Carrier customer service first; if unresolved or no reply after 15 days, 電信服務消費爭議處理中心 **0800-034-580** / https://tcmc.tw; NCC channel **0800-177177** or **0800-201-207** |
-| Cable TV / broadband complaint | Operator first; NCC complaint portal/phone if unresolved: https://cabletvweb.ncc.gov.tw; **0800-177177** (landline) or **02-4128-177** (mobile) |
+| Telecom billing/contract dispute | Carrier customer service first; if unresolved or no reply after 15 days, 電信服務消費爭議處理中心 **0800-034-580**; NCC process: https://www.ncc.gov.tw/Chinese/content.aspx?site_content_sn=3154; NCC complaint portal: https://cabletvweb.ncc.gov.tw/pop30 |
+| Cable TV / broadband complaint | Operator first; NCC complaint portal/phone if unresolved: https://cabletvweb.ncc.gov.tw/pop30; **0800-177177** (landline) or **02-4128-177** (mobile) |
 | Government online identity / digital certificate | MyData: https://mydata.nat.gov.tw; natural person certificate: https://moica.nat.gov.tw |
 | TW FidO / mobile natural person certificate | https://fido.moi.gov.tw; use for supported government logins and digital signing |
 | Government site rejects ARC/ID number | Try exact ARC format, uppercase letters, no spaces; if still blocked, call agency or use counter service |
@@ -598,7 +598,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Domestic Violence / Child / Sexual Assault | **113** |
 | Anti-Fraud | **165** |
 | Suicide Prevention | **1925** |
-| Labor Exploitation | **1955** |
+| Migrant / foreign worker labor rights, complaints, interpretation | **1955** |
 
 ### Advisory / Support Hotlines (verify hours before promising availability)
 | | Number |
@@ -622,7 +622,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Earthquake info after a quake | CWA Seismological Center: https://scweb.cwa.gov.tw; shows magnitude, epicenter, tsunami status |
 | Legal aid | 法律扶助基金會 LAF: https://www.laf.org.tw; **412-8518** (landline direct, mobile add **02**); verify menu, hours, language, and issue scope |
 | Your country's representative office | Search "[country] representative office Taipei" — Taiwan has unofficial offices for most countries |
-| Reporting landlord/employer illegal behavior | 1999 (Taipei city issues); 110 (police); 1955 (labor) |
+| Reporting landlord/employer illegal behavior | 1999 (Taipei city issues); 110 (police); 1955 for migrant/foreign-worker labor rights; local labor bureau/MOL route for other labor disputes |
 | DV / abuse resources | **113** → emergency shelter referral, protection order guidance, legal aid |
 | Scam message/call but no money sent | **165** for verification; do not click links or call numbers in the message |
 | Money just sent to scammer | Call bank/card issuer immediately, call **165**, preserve transfer details, and complete police report steps |
@@ -671,7 +671,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 → Verify separately with the operator or local agency. Weather warnings, stop-work/school announcements, transport service status, garbage collection, clinic hours, bank hours, and school decisions are related but not interchangeable.
 
 **"Someone is taking advantage of me (employer, landlord, scammer)"**
-→ Labor: **1955** | Landlord: **1950** or district 調解委員會 | Scam: **165** | Physical danger: **110**
+→ Migrant/foreign-worker labor rights: **1955** | Other labor disputes: local labor bureau / Ministry of Labor route | Landlord: **1950** or district 調解委員會 | Scam: **165** | Physical danger: **110**
 
 **"Something is wrong in my apartment/building"**
 → Preserve dated evidence, notify landlord/building manager in writing, check lease/building rules, then route to mediation, consumer protection, city building office, or emergency services depending on danger.
