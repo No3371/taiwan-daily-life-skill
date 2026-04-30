@@ -1,6 +1,6 @@
 # Taiwan Daily Life Reference Split Plan
 
-> **Status:** Ready
+> **Status:** In Progress
 > **Created:** 2026-05-01
 > **Author:** Codex
 > **Source:** Direct request
