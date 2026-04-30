@@ -33,7 +33,7 @@ Fast disambiguators:
 | Local taxes: house tax, land value tax, vehicle license tax | Local taxation bureau; search "[city/county] 地方稅務局 房屋稅 / 地價稅 / 使用牌照稅" |
 | Vehicle fuel fee | Motor Vehicles Office / MVDIS: https://www.mvdis.gov.tw; search "燃料使用費 查詢" |
 | Find local taxation bureau | https://www.mof.gov.tw → 所屬機關 → find by region |
-| Tax hotline (EN available in May) | **0800-000-321** |
+| Tax hotline (EN available in May) | **0800-000-321**; NTBT English contact source: https://www.ntbt.gov.tw/English/htmlList/5d6b0b486ba04927b88722b6d16bc01b, update 2026-04-30; verify local/national tax scope |
 | Uniform invoice lottery / e-invoice carrier | 財政部電子發票整合服務平台: https://www.einvoice.nat.gov.tw |
 | Tax payment at convenience store | eTax payment barcode or printed bill → ibon/FamiPort/OK mart/Life-ET depending on bill |
 

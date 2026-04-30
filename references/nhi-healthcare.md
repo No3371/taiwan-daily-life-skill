@@ -44,7 +44,7 @@ Fast disambiguators:
 | Drug coverage check | 健保用藥品項查詢: https://www.nhi.gov.tw → 藥品給付規定 |
 | Bringing prescription medicine into Taiwan | TFDA 個人輸入自用藥品規範專區: https://www.fda.gov.tw/TC/site.aspx?sid=3928; use English pages only as secondary help and verify controlled-drug/quantity rules before advising |
 | Food safety / suspicious food product | TFDA 食藥署: https://www.fda.gov.tw; food safety hotline **1919** |
-| NHI disputes / complaints | NHI hotline: **0800-030-598** |
+| NHI disputes / complaints | NHI hotline: **0800-030-598**; NHIA service-points source: https://www.nhi.gov.tw/ch/np-2335-1.html, update 2023-12-19; phone/homepage last checked 2026-05-01 |
 | Mental health stress / suicidal thoughts | **1925** 安心專線 for crisis or strong distress; local community mental health center 社區心理衛生中心 for non-emergency support; **119/110** if immediate danger |
 | Addiction / drug-use support | 毒品危害防制中心諮詢專線 **0800-770-885**; if overdose or immediate danger call **119** |
 

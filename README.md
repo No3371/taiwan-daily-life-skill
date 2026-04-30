@@ -49,6 +49,23 @@ Before adding exact numbers, deadlines, fees, fines, fares, subsidy thresholds, 
 
 For high-risk admin claims and advisory hotlines, keep a source anchor near the route in `references/*.md`: exact official URL, what claim it supports, and a last-checked date when the page does not expose a clear update date. Avoid generic homepages as proof for immigration, NHI, tax, labor, housing, medicine import, emergency, or scam-adjacent claims.
 
+Link-check convention for tracked routing docs:
+
+```powershell
+$files = git ls-files README.md SKILL.md "references/*.md"
+$urls = $files | ForEach-Object {
+  Select-String -Path $_ -Pattern 'https?://[^\s\)\]\>;"]+' -AllMatches |
+    ForEach-Object { $_.Matches.Value.TrimEnd('.', ',', ';', ':') }
+} | Sort-Object -Unique
+$urls | ForEach-Object {
+  $url = $_
+  try { $r = Invoke-WebRequest -Uri $url -Method Head -MaximumRedirection 5 -TimeoutSec 20; "{0} {1}" -f [int]$r.StatusCode, $url }
+  catch { try { $r = Invoke-WebRequest -Uri $url -Method Get -MaximumRedirection 5 -TimeoutSec 20; "{0} {1}" -f [int]$r.StatusCode, $url } catch { "FAIL $url :: $($_.Exception.Message)" } }
+}
+```
+
+Record any known-bad or JS-only URLs with last-checked date and manual verification note near the affected reference row.
+
 Prefer official sources:
 
 - central government agencies

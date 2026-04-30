@@ -33,7 +33,7 @@ Fast disambiguators:
 | Homeless / immediate shelter or food need | **1957** or local social welfare bureau; if danger, exposure, injury, or medical emergency use **119/110** first |
 | General social welfare consultation | **1957** 福利諮詢專線; for urgent danger use **113/119/110** first |
 | Caregiver stress / respite support | **1966** long-term care route; 家庭照顧者關懷專線 **0800-507-272**; local caregiver support stations |
-| Dementia care support | 失智症關懷專線 **0800-474-580** and local dementia/community care resources |
+| Dementia care support | 失智症關懷專線 **0800-474-580** and local dementia/community care resources; MOHW consultation hotline source: https://mohw.gov.tw/np-23-1.html, last checked 2026-05-01 |
 | Sign-language / real-time captioning service | Local social welfare bureau; search "[city] 手語翻譯 同步聽打 申請" |
 | Disability parking permit | Local social welfare bureau or motor vehicle office depending on permit/plate; search "身心障礙者專用停車位識別證 申請" |
 | Accessibility barrier or service discrimination | Responsible venue/operator first; unresolved → local social welfare bureau, transport bureau, or rights complaint channel |

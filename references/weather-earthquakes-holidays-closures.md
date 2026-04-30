@@ -28,7 +28,7 @@ Fast disambiguators:
 | Immediate disaster danger: flood, landslide, fire, trapped/injured people | **119** first; then city/county disaster-prevention page if safe |
 | Natural-disaster stop-work/school status | 行政院人事行政總處 DGPA: https://www.dgpa.gov.tw/typh/daily/nds.html; also verify city/county government |
 | Official national office calendar / make-up workdays | DGPA 辦公日曆表: https://www.dgpa.gov.tw/informationlist?uid=41; search "行政機關辦公日曆表" + year |
-| Private-sector holiday / labor day / make-up work questions | 勞動部 Ministry of Labor: https://www.mol.gov.tw; legal anchor: Labor Standards Act Article 37/39 via https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=39&id=FL014930; current-news anchor for Labor Day examples: search MOL "勞動節 出勤 工資" |
+| Private-sector holiday / labor day / make-up work questions | 勞動部 Ministry of Labor: https://www.mol.gov.tw; Article 37 holiday/rest-day anchor: https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=37&id=FL014930; Article 39 wage-for-holiday-work anchor: https://laws.mol.gov.tw/FLAW/FLAWDOC01.aspx?flno=39&id=FL014930; law-system data cutoff 2026-03-31; current-news anchor for Labor Day examples: search MOL "勞動節 出勤 工資" |
 | School calendar or closure | City/county education bureau + school announcement; search "[city] 停班停課 教育局" or "[school] 行事曆" |
 | Bank, post office, stock market, or clinic open/closed | Verify with the operator/institution; official government calendar may not fully answer sector-specific closures |
 | Public transport disruption due to typhoon/earthquake | Operator site/app first: THSR, TRA, MRT, bus operator, airport MRT; search "營運異動 / 停駛 / 延誤" |

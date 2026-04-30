@@ -25,8 +25,8 @@ Fast disambiguators:
 |---|---|
 | Tourist SIM/eSIM | Airport telecom counters or official carrier sites: Chunghwa Telecom, Taiwan Mobile, Far EasTone |
 | Postpaid mobile plan as resident | Carrier store; bring Taiwan ID or ARC/passport + second ID if requested |
-| Telecom billing/contract dispute | Carrier customer service first; if unresolved or no reply after 15 days, 電信服務消費爭議處理中心 **0800-034-580**; NCC process: https://www.ncc.gov.tw/Chinese/content.aspx?site_content_sn=3154; NCC complaint portal: https://cabletvweb.ncc.gov.tw/pop30 |
-| Cable TV / broadband complaint | Operator first; NCC complaint portal/phone if unresolved: https://cabletvweb.ncc.gov.tw/pop30; **0800-177177** (landline) or **02-4128-177** (mobile) |
+| Telecom billing/contract dispute | Carrier customer service first; if unresolved or no reply after 15 days, 電信服務消費爭議處理中心 **0800-034-580**; NCC process: https://www.ncc.gov.tw/Chinese/content.aspx?site_content_sn=3154; NCC complaint portal/source: https://cabletvweb.ncc.gov.tw/pop30, last checked 2026-05-01 |
+| Cable TV / broadband complaint | Operator first; NCC complaint portal/phone if unresolved: https://cabletvweb.ncc.gov.tw/pop30; **0800-177177** (landline) or **02-4128-177** (mobile from 2025-01-01 per NCC portal); last checked 2026-05-01 |
 | Government online identity / digital certificate | MyData: https://mydata.nat.gov.tw; natural person certificate: https://moica.nat.gov.tw |
 | TW FidO / mobile natural person certificate | https://fido.moi.gov.tw; use for supported government logins and digital signing |
 | Government site rejects ARC/ID number | Try exact ARC format, uppercase letters, no spaces; if still blocked, call agency or use counter service |

@@ -23,7 +23,7 @@ Fast disambiguators:
 **Primary routing:**
 | Question type | Go to |
 |---|---|
-| Free legal aid / lawyer referral | 法律扶助基金會 LAF: https://www.laf.org.tw; **412-8518** (landline direct, mobile add **02**); press path, hours, language, and issue scope vary |
+| Free legal aid / lawyer referral | 法律扶助基金會 LAF: https://www.laf.org.tw; **412-8518** (landline direct, mobile add **02**); source: https://www.laf.org.tw/tel-ext, update 2024-07-31; press path, hours, language, and issue scope vary |
 | District mediation | Local 區公所/鄉鎮市公所 調解委員會; search "[district] 調解委員會" |
 | Police report / criminal complaint | Local police station or **110** if urgent |
 | Stalking / harassment | **110** if in danger; local police station for report; search "跟蹤騷擾防制法 書面告誡 保護令" |

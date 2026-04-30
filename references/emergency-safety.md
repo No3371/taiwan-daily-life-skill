@@ -38,7 +38,7 @@ Fast disambiguators:
 |---|---|
 | Foreigner/new resident daily-life consultation | **1990**; overseas **886-800-001990** |
 | Disease prevention / epidemic consultation | **1922** or **0800-001922** |
-| Weather / Typhoon Info | CWA web/app first; phone weather recordings **166** Mandarin / **167** Hakka-Taiwanese-English where available; verify current CWA phone routes before quoting |
+| Weather / Typhoon Info | CWA web/app first; phone weather recordings **166** Mandarin / **167** Hakka-Taiwanese-English where available; CWA South service page source/update 2022-04-12, last checked 2026-05-01 |
 | Long-Term Care | **1966** |
 | Social welfare consultation | **1957** |
 | Consumer Protection | **1950** |
@@ -65,6 +65,8 @@ Last checked: 2026-05-01 +08:00. Advisory hours/scope can change; verify source 
 | 0800-870-870 | Pregnancy care consultation | MOHW consultation hotline list: https://mohw.gov.tw/np-23-1.html; HPA service page: https://www.hpa.gov.tw/Pages/List.aspx?nodeid=315 | Verify hours before quoting |
 | 0800-770-885 | Drug-use/addiction consultation | MOHW consultation hotline list: https://mohw.gov.tw/np-23-1.html | 24-hour service listed |
 | 0800-507-272 | Family caregiver support | MOHW consultation hotline list: https://mohw.gov.tw/np-23-1.html; MOHW caregiver page: https://www.mohw.gov.tw/cp-2704-14643-1.html | Verify weekday hours before quoting |
+| 166 / 167 | CWA phone weather recordings: 166 Mandarin; 167 Hakka, Taiwanese, English | CWA South service page: https://south.cwa.gov.tw/contact/category/ziSx1649745822gkJu | Page update 2022-04-12; use CWA web/app first for current warnings |
+| 412-8518 | Legal Aid Foundation national hotline; mobile calls add 02 | LAF national hotline page: https://www.laf.org.tw/tel-ext | Page update 2024-07-31; menu, language, and issue scope vary |
 
 
 **Primary routing:**
@@ -73,7 +75,7 @@ Last checked: 2026-05-01 +08:00. Advisory hours/scope can change; verify source 
 | Real-time typhoon / earthquake alerts | CWA App: 天氣e點靈; web: https://www.cwa.gov.tw |
 | Typhoon holiday / stop-work-school announcement | DGPA: https://www.dgpa.gov.tw/typh/daily/nds.html plus user's city/county government |
 | Earthquake info after a quake | CWA Seismological Center: https://scweb.cwa.gov.tw; shows magnitude, epicenter, tsunami status |
-| Legal aid | 法律扶助基金會 LAF: https://www.laf.org.tw; **412-8518** (landline direct, mobile add **02**); verify menu, hours, language, and issue scope |
+| Legal aid | 法律扶助基金會 LAF: https://www.laf.org.tw; **412-8518** (landline direct, mobile add **02**); source: https://www.laf.org.tw/tel-ext, update 2024-07-31 |
 | Your country's representative office | Search "[country] representative office Taipei" — Taiwan has unofficial offices for most countries |
 | Reporting landlord/employer illegal behavior | 1999 (Taipei city issues); 110 (police); 1955 for migrant/foreign-worker labor rights; local labor bureau/MOL route for other labor disputes |
 | DV / abuse resources | **113** → emergency shelter referral, protection order guidance, legal aid |

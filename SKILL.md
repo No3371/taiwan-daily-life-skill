@@ -118,7 +118,7 @@ Respond in the user's main language. If the user mixes English and Chinese, answ
 | Suicide/self-harm crisis | 1925; 119/110 if immediate danger |
 | Migrant/foreign-worker labor rights/interpretation | 1955 |
 
-Read `references/emergency-safety.md` after immediate action when details are needed.
+Read `references/emergency-safety.md` after immediate action when details, hours, scope, or source anchors are needed.
 
 ## Domain Reference Lookup
 | User need / trigger terms | Read |
