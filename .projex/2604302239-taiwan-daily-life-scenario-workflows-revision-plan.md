@@ -1,6 +1,6 @@
 # Taiwan Daily Life Routing Index Scenario Workflow Revision
 
-> **Status:** Blocked
+> **Status:** In Progress
 > **Created:** 2026-04-30
 > **Author:** Agent
 > **Source:** Direct request: "plan-projex revision" after audit
